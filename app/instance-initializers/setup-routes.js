@@ -1,6 +1,6 @@
 /* eslint-disable ember/new-module-imports */
 
-import Ember from 'ember';
+import { isEmpty } from '@ember/utils';
 import bootstrapRouting from 'torii/bootstrap/routing';
 import { getConfiguration } from 'torii/configuration';
 import getRouterInstance from 'torii/compat/get-router-instance';
@@ -20,7 +20,7 @@ export default {
     var setupRoutes = function(){
       let routerLib = getRouterLib(router);
       var authenticatedRoutes = routerLib.authenticatedRoutes;
-      var hasAuthenticatedRoutes = !Ember.isEmpty(authenticatedRoutes);
+      var hasAuthenticatedRoutes = !isEmpty(authenticatedRoutes);
       if (hasAuthenticatedRoutes) {
         bootstrapRouting(applicationInstance, authenticatedRoutes);
       }

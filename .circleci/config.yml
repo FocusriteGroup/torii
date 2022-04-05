@@ -112,6 +112,15 @@ jobs:
           command: |
             ember try:one "ember-default-jquery"
 
+  publish:
+    docker:
+      - image: node:14-alpine
+    steps:
+      - checkout
+      - run:
+          name: Publish
+          command: npm publish
+
 workflows:
   version: 2
   build:
@@ -138,3 +147,13 @@ workflows:
       - test-default-jquery:
           requires:
             - install_dependencies
+      - publish:
+          context:
+            - NPM-CONFIG
+          filters:
+            branches:
+              ignore:
+                - /.*/
+            tags:
+              only:
+                - /^v.*/

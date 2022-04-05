@@ -1,8 +1,7 @@
-import Ember from 'ember';
 import { Promise as EmberPromise, reject } from 'rsvp';
 import Service from '@ember/service';
 import { on } from '@ember/object/evented';
-import { computed } from '@ember/object';
+import { get, computed } from '@ember/object';
 import createStateMachine from 'torii/session/state-machine';
 import { getOwner } from 'torii/lib/container-utils';
 
@@ -14,7 +13,7 @@ function lookupAdapter(container, authenticationType){
   return adapter;
 }
 
-export default Service.extend(Ember._ProxyMixin, {
+export default Service.extend({
   state: null,
 
   stateMachine: computed(function(){
@@ -29,6 +28,21 @@ export default Service.extend(Ember._ProxyMixin, {
       proxy.set('currentStateName', sm.currentStateName);
     });
   }),
+
+  content: null,
+
+
+  willDestroy() {
+    this.set('content', null);
+    this._super(...arguments);
+  },
+
+  unknownProperty(key) {
+    const content = get(this, 'content')
+    if (content) {
+      return get(content, key);
+    }
+  },
 
   // Make these properties one-way.
   setUnknownProperty() {},

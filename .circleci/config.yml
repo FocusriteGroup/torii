@@ -45,7 +45,7 @@ jobs:
           root: .
           paths:
             - .
-  test-1.12.1:
+  test-lts-3.24:
     <<: *defaults
     steps:
       - attach_workspace:
@@ -53,10 +53,10 @@ jobs:
       - run:
           <<: *step-update-env
       - run:
-          name: ember try 1.12.1
+          name: ember try lts 3.24
           command: |
-            ember try:one "Ember 1.12.1"
-  test-1.13:
+            ember try:one "ember-lts-3.24"
+  test-lts-3.28:
     <<: *defaults
     steps:
       - attach_workspace:
@@ -64,53 +64,9 @@ jobs:
       - run:
           <<: *step-update-env
       - run:
-          name: ember try 1.13
+          name: ember try lts 3.28
           command: |
-            ember try:one "Ember 1.13"
-  test-lts-2.4:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: .
-      - run:
-          <<: *step-update-env
-      - run:
-          name: ember try lts 2.4
-          command: |
-            ember try:one "ember-lts-2.4"
-  test-lts-2.8:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: .
-      - run:
-          <<: *step-update-env
-      - run:
-          name: ember try lts 2.8
-          command: |
-            ember try:one "ember-lts-2.8"
-  test-lts-2.12:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: .
-      - run:
-          <<: *step-update-env
-      - run:
-          name: ember try lts 2.12
-          command: |
-            ember try:one "ember-lts-2.12"
-  test-lts-2.16:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: .
-      - run:
-          <<: *step-update-env
-      - run:
-          name: ember try lts 2.16
-          command: |
-            ember try:one "ember-lts-2.16"
+            ember try:one "ember-lts-3.28"
   test-canary:
     <<: *defaults
     steps:
@@ -164,22 +120,10 @@ workflows:
       - install_dependencies:
           requires:
             - checkout_code
-      - test-1.12.1:
+      - test-lts-3.24:
           requires:
             - install_dependencies
-      - test-1.13:
-          requires:
-            - install_dependencies
-      - test-lts-2.4:
-          requires:
-            - install_dependencies
-      - test-lts-2.8:
-          requires:
-            - install_dependencies
-      - test-lts-2.12:
-          requires:
-            - install_dependencies
-      - test-lts-2.16:
+      - test-lts-3.28:
           requires:
             - install_dependencies
       - test-canary:

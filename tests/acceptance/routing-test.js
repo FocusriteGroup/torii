@@ -5,6 +5,7 @@ import rawConfig from '../../config/environment';
 import lookup from '../helpers/lookup';
 import Router from 'dummy/router';
 import QUnit from 'qunit';
+import { authenticatedRoute } from 'torii/router-dsl-ext';
 
 let { module, test } = QUnit;
 
@@ -59,7 +60,7 @@ test('ApplicationRoute#checkLogin is called when an authenticated route is prese
   bootApp({
     map() {
       routesConfigured = true;
-      this.authenticatedRoute('account');
+      authenticatedRoute(this, 'account');
     },
     setup() {
       app.register('route:application', Route.extend());
@@ -88,7 +89,7 @@ test('ApplicationRoute#checkLogin returns the correct name of the session variab
   bootApp({
     map() {
       routesConfigured = true;
-      this.authenticatedRoute('account');
+      authenticatedRoute(this, 'account');
     },
     setup() {
       app.register('route:application', Route.extend());
@@ -116,7 +117,7 @@ test('authenticated routes get authenticate method', function(assert){
   bootApp({
     map() {
       this.route('home');
-      this.authenticatedRoute('account');
+      authenticatedRoute(this, 'account');
     },
     setup() {
       app.register('route:application', Route.extend());
@@ -138,7 +139,7 @@ test('lazily created authenticated routes get authenticate method', function(ass
   bootApp({
     map() {
       this.route('home');
-      this.authenticatedRoute('account');
+      authenticatedRoute(this, 'account');
     }
   });
   var applicationRoute = lookup(app, 'route:application');
@@ -158,7 +159,7 @@ test('session.attemptedTransition is set before redirecting away from authentica
   bootApp({
     map() {
       this.route('public');
-      this.authenticatedRoute('secret');
+      authenticatedRoute(this, 'secret');
     },
     setup() {
       app.register('route:application', Route.extend());

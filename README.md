@@ -189,7 +189,7 @@ module.exports = function(environment) {
 ```JavaScript
 // app/router.js
 Router.map(function(){
-    this.authenticatedRoute('my-account');
+    authenticatedRoute(this, 'my-account');
     this.route('login');
 });
 ```

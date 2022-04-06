@@ -116,7 +116,8 @@ jobs:
     docker:
       - image: node:14-alpine
     steps:
-      - checkout
+      - attach_workspace:
+          at: .
       - run:
           name: Publish
           command: npm publish
@@ -126,30 +127,32 @@ workflows:
   build:
     jobs:
       - checkout_code
-      - install_dependencies:
-          requires:
-            - checkout_code
-      - test-lts-3.24:
-          requires:
-            - install_dependencies
-      - test-lts-3.28:
-          requires:
-            - install_dependencies
-      - test-canary:
-          requires:
-            - install_dependencies
-      - test-beta:
-          requires:
-            - install_dependencies
-      - test-release:
-          requires:
-            - install_dependencies
-      - test-default-jquery:
-          requires:
-            - install_dependencies
+      # - install_dependencies:
+      #     requires:
+      #       - checkout_code
+      # - test-lts-3.24:
+      #     requires:
+      #       - install_dependencies
+      # - test-lts-3.28:
+      #     requires:
+      #       - install_dependencies
+      # - test-canary:
+      #     requires:
+      #       - install_dependencies
+      # - test-beta:
+      #     requires:
+      #       - install_dependencies
+      # - test-release:
+      #     requires:
+      #       - install_dependencies
+      # - test-default-jquery:
+      #     requires:
+      #       - install_dependencies
       - publish:
           context:
             - NPM-CONFIG
+          requires:
+            - checkout_code
           filters:
             branches:
               ignore:

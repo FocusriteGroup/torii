@@ -2,7 +2,7 @@ import { resolve, reject } from 'rsvp';
 import { run } from '@ember/runloop';
 var session, user, adapter, app;
 
-import SessionService from 'torii/services/torii-session';
+import SessionService from '@focusritegroup/torii/services/torii-session';
 import DummyAdapter from '../helpers/dummy-adapter';
 import DummySuccessProvider from '../helpers/dummy-success-provider';
 import DummyFailureProvider from '../helpers/dummy-failure-provider';

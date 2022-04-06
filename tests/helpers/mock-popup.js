@@ -1,5 +1,5 @@
 import { resolve } from 'rsvp';
-import ParseQueryString from 'torii/lib/parse-query-string';
+import ParseQueryString from '@focusritegroup/torii/lib/parse-query-string';
 
 var MockPopup = function(options) {
   options = options || {};

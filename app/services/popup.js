@@ -1,1 +1,1 @@
-export { default } from 'torii/services/popup';
+export { default } from '@focusritegroup/torii/services/popup';

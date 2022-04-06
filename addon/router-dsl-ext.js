@@ -1,5 +1,5 @@
 import Router from '@ember/routing/router';
-import getRouterLib from 'torii/compat/get-router-lib';
+import getRouterLib from '@focusritegroup/torii/compat/get-router-lib';
 
 var currentMap = null;
 

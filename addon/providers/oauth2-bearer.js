@@ -1,4 +1,4 @@
-import Provider from 'torii/providers/oauth2-code';
+import Provider from '@focusritegroup/torii/providers/oauth2-code';
 
 var Oauth2Bearer = Provider.extend({
   responseType: 'token',

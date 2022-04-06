@@ -1,5 +1,5 @@
-import { configurable } from 'torii/configuration';
-import Oauth2 from 'torii/providers/oauth2-code';
+import { configurable } from '@focusritegroup/torii/configuration';
+import Oauth2 from '@focusritegroup/torii/providers/oauth2-code';
 import { computed } from '@ember/object';
 
 export default Oauth2.extend({

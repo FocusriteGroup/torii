@@ -1,6 +1,6 @@
 import Evented from '@ember/object/evented';
 import EmberObject from '@ember/object';
-import UiServiceMixin from 'torii/mixins/ui-service-mixin';
+import UiServiceMixin from '@focusritegroup/torii/mixins/ui-service-mixin';
 
 function stringifyOptions(options){
   var optionsStrings = [];

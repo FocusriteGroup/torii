@@ -1,6 +1,6 @@
 import { run } from '@ember/runloop';
-import Popup from 'torii/services/popup';
-import PopupIdSerializer from 'torii/lib/popup-id-serializer';
+import Popup from '@focusritegroup/torii/services/popup';
+import PopupIdSerializer from '@focusritegroup/torii/lib/popup-id-serializer';
 import { CURRENT_REQUEST_KEY } from "torii/mixins/ui-service-mixin";
 import QUnit from 'qunit';
 

@@ -1,4 +1,4 @@
-import ToriiSessionService from 'torii/services/torii-session';
+import ToriiSessionService from '@focusritegroup/torii/services/torii-session';
 
 export default function(application, sessionName){
   var sessionFactoryName = 'service:' + sessionName;

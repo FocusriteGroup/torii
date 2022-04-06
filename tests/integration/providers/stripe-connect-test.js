@@ -1,5 +1,5 @@
 import { run } from '@ember/runloop';
-import { configure } from 'torii/configuration';
+import { configure } from '@focusritegroup/torii/configuration';
 import MockPopup from '../../helpers/mock-popup';
 import startApp from '../../helpers/start-app';
 import lookup from '../../helpers/lookup';

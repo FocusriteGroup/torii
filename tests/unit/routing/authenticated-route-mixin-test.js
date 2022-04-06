@@ -6,9 +6,9 @@ import {
   reject
 } from 'rsvp';
 import Route from '@ember/routing/route';
-import AuthenticatedRouteMixin from 'torii/routing/authenticated-route-mixin';
+import AuthenticatedRouteMixin from '@focusritegroup/torii/routing/authenticated-route-mixin';
 import QUnit from 'qunit';
-import { configure, getConfiguration } from 'torii/configuration';
+import { configure, getConfiguration } from '@focusritegroup/torii/configuration';
 
 let { module, test } = QUnit;
 let originalConfiguration;

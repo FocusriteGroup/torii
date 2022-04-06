@@ -1,9 +1,9 @@
 import { later } from '@ember/runloop';
 import { Promise as EmberPromise, reject } from 'rsvp';
 import Route from '@ember/routing/route';
-import ApplicationRouteMixin from 'torii/routing/application-route-mixin';
+import ApplicationRouteMixin from '@focusritegroup/torii/routing/application-route-mixin';
 import QUnit from 'qunit';
-import { configure, getConfiguration } from 'torii/configuration';
+import { configure, getConfiguration } from '@focusritegroup/torii/configuration';
 
 let { module, test } = QUnit;
 let originalConfiguration;

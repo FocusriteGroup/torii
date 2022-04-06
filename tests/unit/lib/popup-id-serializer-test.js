@@ -1,4 +1,4 @@
-import PopupIdSerializer from 'torii/lib/popup-id-serializer';
+import PopupIdSerializer from '@focusritegroup/torii/lib/popup-id-serializer';
 import QUnit from 'qunit';
 
 let { module, test } = QUnit;

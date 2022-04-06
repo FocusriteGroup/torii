@@ -1,8 +1,8 @@
 import { Promise as EmberPromise } from 'rsvp';
 import { run } from '@ember/runloop';
 import { assign } from '@ember/polyfills';
-import OAuth2Code from 'torii/providers/oauth2-code';
-import { configurable } from 'torii/configuration';
+import OAuth2Code from '@focusritegroup/torii/providers/oauth2-code';
+import { configurable } from '@focusritegroup/torii/configuration';
 
 /**
  * This class implements a provider allowing authentication against google's

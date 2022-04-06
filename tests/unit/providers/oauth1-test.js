@@ -1,5 +1,5 @@
 import { run } from '@ember/runloop';
-import { getConfiguration, configure } from 'torii/configuration';
+import { getConfiguration, configure } from '@focusritegroup/torii/configuration';
 
 import QUnit from 'qunit';
 
@@ -7,7 +7,7 @@ let { module, test } = QUnit;
 let provider;
 let originalConfiguration;
 
-import BaseProvider from 'torii/providers/oauth1';
+import BaseProvider from '@focusritegroup/torii/providers/oauth1';
 
 var providerName = 'mock-oauth1';
 

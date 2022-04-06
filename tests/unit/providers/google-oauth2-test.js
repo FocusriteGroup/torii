@@ -1,7 +1,7 @@
 import { run } from '@ember/runloop';
-import { getConfiguration, configure } from 'torii/configuration';
+import { getConfiguration, configure } from '@focusritegroup/torii/configuration';
 
-import GoogleProvider from 'torii/providers/google-oauth2';
+import GoogleProvider from '@focusritegroup/torii/providers/google-oauth2';
 import QUnit from 'qunit';
 
 let { module, test } = QUnit;

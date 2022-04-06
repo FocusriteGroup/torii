@@ -1,1 +1,1 @@
-export { default } from 'torii/services/torii';
+export { default } from '@focusritegroup/torii/services/torii';

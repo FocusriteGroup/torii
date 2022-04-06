@@ -1,6 +1,6 @@
 import Evented from '@ember/object/evented';
 import EmberObject from '@ember/object';
-import UiServiceMixin from 'torii/mixins/ui-service-mixin';
+import UiServiceMixin from '@focusritegroup/torii/mixins/ui-service-mixin';
 
 var Iframe = EmberObject.extend(Evented, UiServiceMixin, {
 

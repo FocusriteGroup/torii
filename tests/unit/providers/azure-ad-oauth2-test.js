@@ -1,6 +1,6 @@
 import { run } from '@ember/runloop';
-import { getConfiguration, configure } from 'torii/configuration';
-import AzureAdProvider from 'torii/providers/azure-ad-oauth2';
+import { getConfiguration, configure } from '@focusritegroup/torii/configuration';
+import AzureAdProvider from '@focusritegroup/torii/providers/azure-ad-oauth2';
 import QUnit from 'qunit';
 
 let { module, test } = QUnit;

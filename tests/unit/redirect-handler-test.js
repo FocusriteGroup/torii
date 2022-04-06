@@ -1,6 +1,6 @@
 import { run } from '@ember/runloop';
-import RedirectHandler from 'torii/redirect-handler';
-import { CURRENT_REQUEST_KEY } from 'torii/mixins/ui-service-mixin';
+import RedirectHandler from '@focusritegroup/torii/redirect-handler';
+import { CURRENT_REQUEST_KEY } from '@focusritegroup/torii/mixins/ui-service-mixin';
 import QUnit from 'qunit';
 
 let { module, test } = QUnit;

@@ -1,11 +1,11 @@
 /* eslint-disable ember/new-module-imports */
 
 import { isEmpty } from '@ember/utils';
-import bootstrapRouting from 'torii/bootstrap/routing';
-import { getConfiguration } from 'torii/configuration';
-import getRouterInstance from 'torii/compat/get-router-instance';
-import getRouterLib from 'torii/compat/get-router-lib';
-import "torii/router-dsl-ext";
+import bootstrapRouting from '@focusritegroup/torii/bootstrap/routing';
+import { getConfiguration } from '@focusritegroup/torii/configuration';
+import getRouterInstance from '@focusritegroup/torii/compat/get-router-instance';
+import getRouterLib from '@focusritegroup/torii/compat/get-router-lib';
+import "@focusritegroup/torii/router-dsl-ext";
 
 export default {
   name: 'torii-setup-routes',

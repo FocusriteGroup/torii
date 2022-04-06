@@ -1,18 +1,18 @@
-import LinkedInOauth2Provider from 'torii/providers/linked-in-oauth2';
-import GoogleOauth2Provider from 'torii/providers/google-oauth2';
-import GoogleOauth2BearerProvider from 'torii/providers/google-oauth2-bearer';
-import GoogleOauth2BearerV2Provider from 'torii/providers/google-oauth2-bearer-v2';
-import FacebookConnectProvider from 'torii/providers/facebook-connect';
-import FacebookOauth2Provider from 'torii/providers/facebook-oauth2';
-import ApplicationAdapter from 'torii/adapters/application';
-import TwitterProvider from 'torii/providers/twitter-oauth1';
-import GithubOauth2Provider from 'torii/providers/github-oauth2';
-import AzureAdOauth2Provider from 'torii/providers/azure-ad-oauth2';
-import StripeConnectProvider from 'torii/providers/stripe-connect';
+import LinkedInOauth2Provider from '@focusritegroup/torii/providers/linked-in-oauth2';
+import GoogleOauth2Provider from '@focusritegroup/torii/providers/google-oauth2';
+import GoogleOauth2BearerProvider from '@focusritegroup/torii/providers/google-oauth2-bearer';
+import GoogleOauth2BearerV2Provider from '@focusritegroup/torii/providers/google-oauth2-bearer-v2';
+import FacebookConnectProvider from '@focusritegroup/torii/providers/facebook-connect';
+import FacebookOauth2Provider from '@focusritegroup/torii/providers/facebook-oauth2';
+import ApplicationAdapter from '@focusritegroup/torii/adapters/application';
+import TwitterProvider from '@focusritegroup/torii/providers/twitter-oauth1';
+import GithubOauth2Provider from '@focusritegroup/torii/providers/github-oauth2';
+import AzureAdOauth2Provider from '@focusritegroup/torii/providers/azure-ad-oauth2';
+import StripeConnectProvider from '@focusritegroup/torii/providers/stripe-connect';
 
-import ToriiService from 'torii/services/torii';
-import PopupService from 'torii/services/popup';
-import IframeService from 'torii/services/iframe';
+import ToriiService from '@focusritegroup/torii/services/torii';
+import PopupService from '@focusritegroup/torii/services/popup';
+import IframeService from '@focusritegroup/torii/services/iframe';
 
 export default function(application) {
   application.register('service:torii', ToriiService);

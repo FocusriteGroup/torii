@@ -1,8 +1,8 @@
 import EmberObject, { computed } from '@ember/object';
-import requiredProperty from 'torii/lib/required-property';
-import { getOwner } from 'torii/lib/container-utils';
-import { configurable } from 'torii/configuration';
-import configuration from 'torii/configuration';
+import requiredProperty from '@focusritegroup/torii/lib/required-property';
+import { getOwner } from '@focusritegroup/torii/lib/container-utils';
+import { configurable } from '@focusritegroup/torii/configuration';
+import configuration from '@focusritegroup/torii/configuration';
 
 var DEFAULT_REMOTE_SERVICE_NAME = 'popup';
 

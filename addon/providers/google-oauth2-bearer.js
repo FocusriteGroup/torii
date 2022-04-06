@@ -3,8 +3,8 @@
  * using the client-side OAuth2 authorization flow in a popup window.
  */
 
-import Oauth2Bearer from 'torii/providers/oauth2-bearer';
-import { configurable } from 'torii/configuration';
+import Oauth2Bearer from '@focusritegroup/torii/providers/oauth2-bearer';
+import { configurable } from '@focusritegroup/torii/configuration';
 
 var GoogleOauth2Bearer = Oauth2Bearer.extend({
 

@@ -1,7 +1,7 @@
 import { run } from '@ember/runloop';
 import { resolve } from 'rsvp';
-import OAuth1Provider from 'torii/providers/oauth1';
-import { configure } from 'torii/configuration';
+import OAuth1Provider from '@focusritegroup/torii/providers/oauth1';
+import { configure } from '@focusritegroup/torii/configuration';
 import startApp from '../../helpers/start-app';
 import lookup from '../../helpers/lookup';
 import QUnit from 'qunit';

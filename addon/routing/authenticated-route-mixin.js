@@ -1,6 +1,6 @@
 import { resolve } from 'rsvp';
 import Mixin from '@ember/object/mixin';
-import { getConfiguration } from 'torii/configuration';
+import { getConfiguration } from '@focusritegroup/torii/configuration';
 
 export default Mixin.create({
   beforeModel(transition) {

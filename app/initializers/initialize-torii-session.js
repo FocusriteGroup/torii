@@ -1,5 +1,5 @@
-import bootstrapSession from 'torii/bootstrap/session';
-import { getConfiguration } from 'torii/configuration';
+import bootstrapSession from '@focusritegroup/torii/bootstrap/session';
+import { getConfiguration } from '@focusritegroup/torii/configuration';
 
 export default {
   name: 'torii-session',

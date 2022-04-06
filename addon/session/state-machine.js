@@ -1,4 +1,4 @@
-import StateMachine from 'torii/lib/state-machine';
+import StateMachine from '@focusritegroup/torii/lib/state-machine';
 
 var transitionTo = StateMachine.transitionTo;
 

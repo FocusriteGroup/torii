@@ -1,6 +1,6 @@
 import Service from '@ember/service';
 import { Promise as EmberPromise } from 'rsvp';
-import { getOwner } from 'torii/lib/container-utils';
+import { getOwner } from '@focusritegroup/torii/lib/container-utils';
 
 function lookupProvider(container, providerName){
   return container.lookup('torii-provider:'+providerName);

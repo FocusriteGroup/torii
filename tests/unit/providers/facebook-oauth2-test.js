@@ -1,7 +1,7 @@
 import { run } from '@ember/runloop';
-import { getConfiguration, configure } from 'torii/configuration';
+import { getConfiguration, configure } from '@focusritegroup/torii/configuration';
 
-import FacebookProvider from 'torii/providers/facebook-oauth2';
+import FacebookProvider from '@focusritegroup/torii/providers/facebook-oauth2';
 import QUnit from 'qunit';
 
 let { module, test } = QUnit;

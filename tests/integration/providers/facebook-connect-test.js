@@ -1,10 +1,10 @@
 import { run } from '@ember/runloop';
 import buildFBMock from '../../helpers/build-fb-mock';
-import { configure } from 'torii/configuration';
+import { configure } from '@focusritegroup/torii/configuration';
 import startApp from '../../helpers/start-app';
 import lookup from '../../helpers/lookup';
 import QUnit from 'qunit';
-import { overrideLoadScript, resetLoadScript } from 'torii/providers/-private/utils';
+import { overrideLoadScript, resetLoadScript } from '@focusritegroup/torii/providers/-private/utils';
 const { module, test } = QUnit;
 
 var originalFB = window.FB;

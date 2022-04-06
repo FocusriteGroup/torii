@@ -1,5 +1,5 @@
-import bootstrapTorii from 'torii/bootstrap/torii';
-import {configure} from 'torii/configuration';
+import bootstrapTorii from '@focusritegroup/torii/bootstrap/torii';
+import {configure} from '@focusritegroup/torii/configuration';
 import config from '../config/environment';
  
 

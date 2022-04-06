@@ -1,6 +1,6 @@
 import { run } from '@ember/runloop';
 import EmberObject from '@ember/object';
-import { configurable, configure } from 'torii/configuration';
+import { configurable, configure } from '@focusritegroup/torii/configuration';
 import QUnit from 'qunit';
 
 let { module, test } = QUnit;

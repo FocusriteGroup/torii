@@ -1,4 +1,4 @@
-import UUIDGenerator from 'torii/lib/uuid-generator';
+import UUIDGenerator from '@focusritegroup/torii/lib/uuid-generator';
 import QUnit from 'qunit';
 
 let { module, test } = QUnit;

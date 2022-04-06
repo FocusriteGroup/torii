@@ -2,7 +2,7 @@ import { run } from '@ember/runloop';
 import { resolve } from 'rsvp';
 var torii, app;
 
-import { configure } from 'torii/configuration';
+import { configure } from '@focusritegroup/torii/configuration';
 import startApp from '../../helpers/start-app';
 import lookup from '../../helpers/lookup';
 import QUnit from 'qunit';

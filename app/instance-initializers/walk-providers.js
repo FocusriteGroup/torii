@@ -1,5 +1,5 @@
-import { lookup } from 'torii/lib/container-utils';
-import { getConfiguration } from 'torii/configuration';
+import { lookup } from '@focusritegroup/torii/lib/container-utils';
+import { getConfiguration } from '@focusritegroup/torii/configuration';
 
 export default {
   name: 'torii-walk-providers',

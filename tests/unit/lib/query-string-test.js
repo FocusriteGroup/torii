@@ -1,6 +1,6 @@
 import { run } from '@ember/runloop';
 import EmberObject from '@ember/object';
-import QueryString from 'torii/lib/query-string';
+import QueryString from '@focusritegroup/torii/lib/query-string';
 import QUnit from 'qunit';
 
 let { module, test } = QUnit;

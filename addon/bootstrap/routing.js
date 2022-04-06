@@ -1,6 +1,6 @@
-import ApplicationRouteMixin from 'torii/routing/application-route-mixin';
-import AuthenticatedRouteMixin from 'torii/routing/authenticated-route-mixin';
-import { lookup, lookupFactory, register } from 'torii/lib/container-utils';
+import ApplicationRouteMixin from '@focusritegroup/torii/routing/application-route-mixin';
+import AuthenticatedRouteMixin from '@focusritegroup/torii/routing/authenticated-route-mixin';
+import { lookup, lookupFactory, register } from '@focusritegroup/torii/lib/container-utils';
 
 var AuthenticatedRoute = null;
 

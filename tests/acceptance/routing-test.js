@@ -5,7 +5,7 @@ import rawConfig from '../../config/environment';
 import lookup from '../helpers/lookup';
 import Router from 'dummy/router';
 import QUnit from 'qunit';
-import { authenticatedRoute } from 'torii/router-dsl-ext';
+import { authenticatedRoute } from '@focusritegroup/torii/router-dsl-ext';
 
 let { module, test } = QUnit;
 

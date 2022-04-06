@@ -1,7 +1,7 @@
 import QUnit from 'qunit';
 let { module, test } = QUnit;
 
-import ParseQueryString from 'torii/lib/parse-query-string';
+import ParseQueryString from '@focusritegroup/torii/lib/parse-query-string';
 
 module('Unit | Lib | ParseQueryString');
 

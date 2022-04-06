@@ -1,4 +1,4 @@
-import Torii from 'torii/services/torii';
+import Torii from '@focusritegroup/torii/services/torii';
 import QUnit from 'qunit';
 
 let { module, test } = QUnit;
